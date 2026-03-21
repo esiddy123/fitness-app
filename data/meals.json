@@ -2,7 +2,7 @@
   "restaurants": [
     {
       "name": "Halal Munchies",
-      "address": "Middle Country Rd, Selden, NY 11784",
+      "address": "",
       "area": "selden",
       "cuisine": "Halal American",
       "meals": [
@@ -60,7 +60,7 @@
     },
     {
       "name": "Kabul Kabob House",
-      "address": "Middle Country Rd, Centereach, NY 11720",
+      "address": "",
       "area": "selden",
       "cuisine": "Afghan",
       "meals": [
@@ -108,7 +108,7 @@
     },
     {
       "name": "Selden Halal Food",
-      "address": "Selden, NY 11784",
+      "address": "",
       "area": "selden",
       "cuisine": "Halal Cart Style",
       "meals": [
@@ -156,7 +156,7 @@
     },
     {
       "name": "Curry Club Indian Grill",
-      "address": "Veterans Memorial Hwy, Hauppauge, NY 11788",
+      "address": "",
       "area": "hauppauge",
       "cuisine": "Indian",
       "meals": [
@@ -214,7 +214,7 @@
     },
     {
       "name": "Chipotle",
-      "address": "Route 347, Hauppauge, NY",
+      "address": "",
       "area": "hauppauge",
       "cuisine": "Fast Casual Mexican",
       "meals": [
@@ -262,7 +262,7 @@
     },
     {
       "name": "Subway",
-      "address": "Middle Country Rd, Selden, NY",
+      "address": "",
       "area": "selden",
       "cuisine": "Subs & Wraps",
       "meals": [
@@ -300,7 +300,7 @@
     },
     {
       "name": "Al-Aqsa Grill",
-      "address": "Portion Rd, Lake Ronkonkoma, NY 11779",
+      "address": "",
       "area": "selden",
       "cuisine": "Mediterranean/Palestinian",
       "meals": [
@@ -348,7 +348,7 @@
     },
     {
       "name": "Naan & Curry",
-      "address": "Motor Pkwy, Hauppauge, NY 11788",
+      "address": "",
       "area": "hauppauge",
       "cuisine": "Pakistani/Indian",
       "meals": [
@@ -396,7 +396,7 @@
     },
     {
       "name": "Cava",
-      "address": "Route 347, Smithtown, NY",
+      "address": "",
       "area": "hauppauge",
       "cuisine": "Mediterranean Fast Casual",
       "meals": [
@@ -434,7 +434,7 @@
     },
     {
       "name": "Halal Food Cart (Hauppauge Industrial)",
-      "address": "Express Dr S, Hauppauge, NY 11788",
+      "address": "",
       "area": "hauppauge",
       "cuisine": "Halal Cart",
       "meals": [

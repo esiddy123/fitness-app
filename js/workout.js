@@ -99,8 +99,8 @@ const Workout = {
       <div class="exercise-item">
         <div class="exercise-check ${isDone ? 'done' : ''}" data-index="${index}"></div>
         <div class="exercise-info">
-          <div class="exercise-name">${ex.name}</div>
-          <div class="exercise-detail">${ex.sets} sets × ${ex.reps} reps${ex.notes ? ' · ' + ex.notes : ''}</div>
+          <div class="exercise-name">${sanitize(ex.name)}</div>
+          <div class="exercise-detail">${sanitize(ex.sets)} sets × ${sanitize(ex.reps)} reps${ex.notes ? ' · ' + sanitize(ex.notes) : ''}</div>
         </div>
       </div>
     `;
