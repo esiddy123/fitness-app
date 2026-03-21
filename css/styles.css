@@ -1,0 +1,767 @@
+/* ============================================
+   CARB CYCLE FITNESS PWA — Mobile-First Styles
+   ============================================ */
+
+:root {
+  /* Carb day colors — green gradient */
+  --low-carb: #86efac;
+  --low-carb-bg: #f0fdf4;
+  --med-carb: #22c55e;
+  --med-carb-bg: #dcfce7;
+  --high-carb: #166534;
+  --high-carb-bg: #bbf7d0;
+
+  /* UI colors */
+  --bg: #0f172a;
+  --bg-card: #1e293b;
+  --bg-input: #334155;
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --border: #334155;
+  --success: #22c55e;
+  --danger: #ef4444;
+
+  /* Spacing */
+  --nav-height: 64px;
+  --page-padding: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: 100%;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ---- App Layout ---- */
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#page-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--page-padding);
+  padding-bottom: calc(var(--nav-height) + 16px);
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ---- Bottom Navigation ---- */
+#bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav-btn svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.nav-btn.active {
+  color: var(--accent);
+}
+
+/* ---- Header ---- */
+.page-header {
+  margin-bottom: 20px;
+}
+
+.page-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.page-header .subtitle {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* ---- Today Banner ---- */
+.today-banner {
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.today-banner.low { background: var(--low-carb); color: #1e293b; }
+.today-banner.med { background: var(--med-carb); color: #1e293b; }
+.today-banner.high { background: var(--high-carb); color: white; }
+
+.today-banner .day-type {
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.today-banner .day-macros {
+  font-size: 14px;
+  margin-top: 8px;
+  opacity: 0.9;
+}
+
+/* ---- Cards ---- */
+.card {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card-subtitle {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* ---- Calendar ---- */
+.calendar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.calendar-nav h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.calendar-nav button {
+  background: var(--bg-input);
+  border: none;
+  color: var(--text);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.calendar-grid .day-label {
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-muted);
+  padding: 4px 0;
+  font-weight: 600;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.15s;
+  position: relative;
+}
+
+.calendar-day:active {
+  transform: scale(0.9);
+}
+
+.calendar-day.empty {
+  cursor: default;
+}
+
+.calendar-day.low { background: var(--low-carb-bg); color: #166534; }
+.calendar-day.med { background: var(--med-carb-bg); color: #166534; }
+.calendar-day.high { background: var(--high-carb-bg); color: #14532d; }
+
+.calendar-day.today {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+  font-weight: 700;
+}
+
+/* Day detail popup */
+.day-detail {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 12px;
+  display: none;
+}
+
+.day-detail.visible {
+  display: block;
+}
+
+/* ---- Macro Bars ---- */
+.macro-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.macro-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.macro-label {
+  font-size: 12px;
+  font-weight: 600;
+  width: 60px;
+  text-transform: uppercase;
+}
+
+.macro-bar-track {
+  flex: 1;
+  height: 8px;
+  background: var(--bg-input);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.macro-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.macro-bar-fill.protein { background: #8b5cf6; }
+.macro-bar-fill.carbs { background: #f59e0b; }
+.macro-bar-fill.fat { background: #ef4444; }
+.macro-bar-fill.calories { background: var(--accent); }
+
+.macro-value {
+  font-size: 12px;
+  color: var(--text-muted);
+  width: 70px;
+  text-align: right;
+}
+
+/* ---- Meal Cards ---- */
+.meal-card {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.meal-card .restaurant-name {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.meal-card .meal-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.meal-card .meal-macros {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.meal-card .meal-macros span {
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--bg-input);
+}
+
+.meal-card .meal-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--success);
+}
+
+.meal-card .meal-notes {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 8px;
+}
+
+.meal-card .log-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.meal-card .log-btn:active {
+  background: var(--accent-hover);
+}
+
+/* ---- Area Filter ---- */
+.area-filter {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.area-filter button {
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 13px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.area-filter button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+/* ---- Workout Page ---- */
+.workout-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.workout-header .muscle-group {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.workout-header .workout-reason {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.exercise-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.exercise-item:last-child {
+  border-bottom: none;
+}
+
+.exercise-check {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+.exercise-check.done {
+  background: var(--success);
+  border-color: var(--success);
+}
+
+.exercise-check.done::after {
+  content: '\2713';
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.exercise-info {
+  flex: 1;
+}
+
+.exercise-info .exercise-name {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.exercise-info .exercise-detail {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* ---- Logger ---- */
+.logger-summary {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.logger-summary .total-calories {
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.logger-summary .calorie-label {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.add-food-btn {
+  position: fixed;
+  bottom: calc(var(--nav-height) + 16px);
+  right: 16px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-log-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.food-log-item:last-child {
+  border-bottom: none;
+}
+
+.food-log-item .food-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.food-log-item .food-time {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.food-log-item .food-cals {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* ---- Modal ---- */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 200;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.modal-overlay.visible {
+  display: flex;
+}
+
+.modal {
+  background: var(--bg-card);
+  border-radius: 16px 16px 0 0;
+  padding: 24px;
+  width: 100%;
+  max-width: 480px;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.modal h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.modal-close {
+  float: right;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* ---- Form Elements ---- */
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-primary:active {
+  background: var(--accent-hover);
+}
+
+.btn-danger {
+  background: var(--danger);
+  color: white;
+}
+
+/* ---- Dashboard ---- */
+.stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+}
+
+.stat-card .stat-value {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.stat-card .stat-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+
+.weekly-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 120px;
+  gap: 4px;
+  padding: 0 4px;
+}
+
+.weekly-bar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.weekly-bar .bar {
+  width: 100%;
+  max-width: 32px;
+  border-radius: 4px 4px 0 0;
+  transition: height 0.3s;
+}
+
+.weekly-bar .bar-label {
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+/* ---- Settings inline ---- */
+.settings-section {
+  margin-top: 24px;
+}
+
+.settings-section h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* ---- Search ---- */
+.search-input {
+  width: 100%;
+  padding: 10px 12px 10px 36px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* ---- Tab pills ---- */
+.tab-pills {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tab-pills button {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab-pills button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+/* ---- Utility ---- */
+.text-center { text-align: center; }
+.mb-8 { margin-bottom: 8px; }
+.mb-12 { margin-bottom: 12px; }
+.mb-16 { margin-bottom: 16px; }
+.mb-20 { margin-bottom: 20px; }
+.hidden { display: none !important; }
+
+/* ---- Onboarding ---- */
+.onboarding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+  padding: 24px;
+}
+
+.onboarding h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.onboarding p {
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.onboarding .form-group {
+  width: 100%;
+  max-width: 320px;
+  text-align: left;
+}
+
+.onboarding .btn {
+  max-width: 320px;
+  margin-top: 12px;
+}

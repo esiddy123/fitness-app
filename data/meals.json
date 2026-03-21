@@ -1,0 +1,484 @@
+{
+  "restaurants": [
+    {
+      "name": "Halal Munchies",
+      "address": "Middle Country Rd, Selden, NY 11784",
+      "area": "selden",
+      "cuisine": "Halal American",
+      "meals": [
+        {
+          "name": "Grilled Chicken Platter (no rice)",
+          "price": 12.99,
+          "protein": 45,
+          "carbs": 8,
+          "fat": 12,
+          "calories": 320,
+          "carbCategory": ["low"],
+          "notes": "Ask for extra salad instead of rice"
+        },
+        {
+          "name": "Grilled Chicken Over Rice",
+          "price": 12.99,
+          "protein": 45,
+          "carbs": 60,
+          "fat": 18,
+          "calories": 582,
+          "carbCategory": ["med", "high"],
+          "notes": "Good post-workout meal"
+        },
+        {
+          "name": "Chicken Shawarma Wrap",
+          "price": 9.99,
+          "protein": 32,
+          "carbs": 38,
+          "fat": 14,
+          "calories": 406,
+          "carbCategory": ["med"],
+          "notes": ""
+        },
+        {
+          "name": "Lamb Over Rice",
+          "price": 13.99,
+          "protein": 38,
+          "carbs": 62,
+          "fat": 28,
+          "calories": 652,
+          "carbCategory": ["high"],
+          "notes": "High calorie — good for heavy leg/back days"
+        },
+        {
+          "name": "Grilled Chicken Salad",
+          "price": 10.99,
+          "protein": 38,
+          "carbs": 10,
+          "fat": 10,
+          "calories": 282,
+          "carbCategory": ["low"],
+          "notes": "Ask for olive oil and lemon dressing"
+        }
+      ]
+    },
+    {
+      "name": "Kabul Kabob House",
+      "address": "Middle Country Rd, Centereach, NY 11720",
+      "area": "selden",
+      "cuisine": "Afghan",
+      "meals": [
+        {
+          "name": "Chicken Kebab Platter (no rice)",
+          "price": 13.99,
+          "protein": 42,
+          "carbs": 6,
+          "fat": 10,
+          "calories": 282,
+          "carbCategory": ["low"],
+          "notes": "Sub salad for rice"
+        },
+        {
+          "name": "Chicken Kebab with Rice",
+          "price": 13.99,
+          "protein": 42,
+          "carbs": 52,
+          "fat": 12,
+          "calories": 488,
+          "carbCategory": ["med", "high"],
+          "notes": ""
+        },
+        {
+          "name": "Beef Chapli Kebab",
+          "price": 14.99,
+          "protein": 35,
+          "carbs": 8,
+          "fat": 20,
+          "calories": 352,
+          "carbCategory": ["low", "med"],
+          "notes": "Comes with naan — skip naan on low days"
+        },
+        {
+          "name": "Lamb Kebab with Rice & Naan",
+          "price": 14.99,
+          "protein": 38,
+          "carbs": 75,
+          "fat": 22,
+          "calories": 654,
+          "carbCategory": ["high"],
+          "notes": "Full plate with bread and rice"
+        }
+      ]
+    },
+    {
+      "name": "Selden Halal Food",
+      "address": "Selden, NY 11784",
+      "area": "selden",
+      "cuisine": "Halal Cart Style",
+      "meals": [
+        {
+          "name": "Chicken Over Rice (regular)",
+          "price": 9.99,
+          "protein": 40,
+          "carbs": 58,
+          "fat": 20,
+          "calories": 572,
+          "carbCategory": ["med", "high"],
+          "notes": "Classic halal cart — white sauce on the side to control fat"
+        },
+        {
+          "name": "Chicken Over Salad",
+          "price": 9.99,
+          "protein": 40,
+          "carbs": 10,
+          "fat": 12,
+          "calories": 308,
+          "carbCategory": ["low"],
+          "notes": "Same protein, skip the rice"
+        },
+        {
+          "name": "Mixed (Chicken + Lamb) Over Rice",
+          "price": 11.99,
+          "protein": 42,
+          "carbs": 58,
+          "fat": 26,
+          "calories": 634,
+          "carbCategory": ["high"],
+          "notes": "Higher fat from lamb"
+        },
+        {
+          "name": "Falafel Wrap",
+          "price": 7.99,
+          "protein": 14,
+          "carbs": 52,
+          "fat": 18,
+          "calories": 422,
+          "carbCategory": ["high"],
+          "notes": "High carb, low protein — add a protein shake"
+        }
+      ]
+    },
+    {
+      "name": "Curry Club Indian Grill",
+      "address": "Veterans Memorial Hwy, Hauppauge, NY 11788",
+      "area": "hauppauge",
+      "cuisine": "Indian",
+      "meals": [
+        {
+          "name": "Tandoori Chicken (half, no bread)",
+          "price": 12.99,
+          "protein": 48,
+          "carbs": 5,
+          "fat": 14,
+          "calories": 338,
+          "carbCategory": ["low"],
+          "notes": "Great low-carb option. Skip the naan."
+        },
+        {
+          "name": "Chicken Tikka with Rice",
+          "price": 13.99,
+          "protein": 40,
+          "carbs": 50,
+          "fat": 12,
+          "calories": 472,
+          "carbCategory": ["med"],
+          "notes": "Ask for plain rice, not biryani"
+        },
+        {
+          "name": "Chicken Biryani",
+          "price": 13.99,
+          "protein": 35,
+          "carbs": 68,
+          "fat": 16,
+          "calories": 556,
+          "carbCategory": ["high"],
+          "notes": "Full carb load with spiced rice"
+        },
+        {
+          "name": "Seekh Kebab Platter (no bread)",
+          "price": 11.99,
+          "protein": 36,
+          "carbs": 4,
+          "fat": 16,
+          "calories": 304,
+          "carbCategory": ["low"],
+          "notes": "Beef seekh kebabs with raita"
+        },
+        {
+          "name": "Chicken Tikka Masala with Naan",
+          "price": 14.99,
+          "protein": 32,
+          "carbs": 62,
+          "fat": 22,
+          "calories": 578,
+          "carbCategory": ["high"],
+          "notes": "Creamy sauce adds calories — pair with high carb day"
+        }
+      ]
+    },
+    {
+      "name": "Chipotle",
+      "address": "Route 347, Hauppauge, NY",
+      "area": "hauppauge",
+      "cuisine": "Fast Casual Mexican",
+      "meals": [
+        {
+          "name": "Chicken Bowl (no rice, no beans)",
+          "price": 11.50,
+          "protein": 38,
+          "carbs": 8,
+          "fat": 12,
+          "calories": 292,
+          "carbCategory": ["low"],
+          "notes": "Not certified halal — pork-free option. Chicken, fajitas, lettuce, salsa, guac."
+        },
+        {
+          "name": "Chicken Bowl (white rice, black beans)",
+          "price": 11.50,
+          "protein": 45,
+          "carbs": 58,
+          "fat": 15,
+          "calories": 551,
+          "carbCategory": ["med", "high"],
+          "notes": "Add rice and beans for carb days"
+        },
+        {
+          "name": "Steak Bowl (white rice)",
+          "price": 12.75,
+          "protein": 42,
+          "carbs": 42,
+          "fat": 16,
+          "calories": 480,
+          "carbCategory": ["med"],
+          "notes": "Higher protein option"
+        },
+        {
+          "name": "Sofritas Bowl (high carb)",
+          "price": 11.50,
+          "protein": 22,
+          "carbs": 68,
+          "fat": 18,
+          "calories": 526,
+          "carbCategory": ["high"],
+          "notes": "Rice, beans, sofritas, corn salsa. Plant-based protein."
+        }
+      ]
+    },
+    {
+      "name": "Subway",
+      "address": "Middle Country Rd, Selden, NY",
+      "area": "selden",
+      "cuisine": "Subs & Wraps",
+      "meals": [
+        {
+          "name": "Chicken Breast Protein Bowl",
+          "price": 9.49,
+          "protein": 36,
+          "carbs": 12,
+          "fat": 8,
+          "calories": 264,
+          "carbCategory": ["low"],
+          "notes": "Chopped salad bowl with chicken, veggies, oil & vinegar"
+        },
+        {
+          "name": "Turkey Breast 6-inch Sub",
+          "price": 7.99,
+          "protein": 24,
+          "carbs": 42,
+          "fat": 5,
+          "calories": 309,
+          "carbCategory": ["med"],
+          "notes": "Wheat bread. Add extra meat for more protein."
+        },
+        {
+          "name": "Chicken Teriyaki Footlong",
+          "price": 12.99,
+          "protein": 46,
+          "carbs": 84,
+          "fat": 10,
+          "calories": 610,
+          "carbCategory": ["high"],
+          "notes": "Lots of carbs from bread — high carb day only"
+        }
+      ]
+    },
+    {
+      "name": "Al-Aqsa Grill",
+      "address": "Portion Rd, Lake Ronkonkoma, NY 11779",
+      "area": "selden",
+      "cuisine": "Mediterranean/Palestinian",
+      "meals": [
+        {
+          "name": "Chicken Shawarma Plate (no pita)",
+          "price": 12.99,
+          "protein": 40,
+          "carbs": 12,
+          "fat": 14,
+          "calories": 334,
+          "carbCategory": ["low"],
+          "notes": "Shawarma meat with salad and pickles"
+        },
+        {
+          "name": "Chicken Shawarma Plate with Rice",
+          "price": 12.99,
+          "protein": 40,
+          "carbs": 55,
+          "fat": 16,
+          "calories": 528,
+          "carbCategory": ["med", "high"],
+          "notes": ""
+        },
+        {
+          "name": "Mixed Grill Platter",
+          "price": 14.99,
+          "protein": 52,
+          "carbs": 15,
+          "fat": 22,
+          "calories": 462,
+          "carbCategory": ["low", "med"],
+          "notes": "Chicken + lamb kebabs with salad. Skip the bread."
+        },
+        {
+          "name": "Mansaf Plate",
+          "price": 14.99,
+          "protein": 38,
+          "carbs": 72,
+          "fat": 24,
+          "calories": 660,
+          "carbCategory": ["high"],
+          "notes": "Lamb with jameed sauce over rice — high carb day treat"
+        }
+      ]
+    },
+    {
+      "name": "Naan & Curry",
+      "address": "Motor Pkwy, Hauppauge, NY 11788",
+      "area": "hauppauge",
+      "cuisine": "Pakistani/Indian",
+      "meals": [
+        {
+          "name": "Chicken Boti (no bread/rice)",
+          "price": 11.99,
+          "protein": 44,
+          "carbs": 4,
+          "fat": 10,
+          "calories": 282,
+          "carbCategory": ["low"],
+          "notes": "Grilled chicken chunks, great protein source"
+        },
+        {
+          "name": "Chicken Boti with Rice",
+          "price": 11.99,
+          "protein": 44,
+          "carbs": 50,
+          "fat": 12,
+          "calories": 488,
+          "carbCategory": ["med"],
+          "notes": ""
+        },
+        {
+          "name": "Nihari with Naan (2 pieces)",
+          "price": 14.99,
+          "protein": 35,
+          "carbs": 65,
+          "fat": 28,
+          "calories": 652,
+          "carbCategory": ["high"],
+          "notes": "Slow-cooked beef stew — comfort food for high carb days"
+        },
+        {
+          "name": "Chicken Karahi (no bread)",
+          "price": 12.99,
+          "protein": 38,
+          "carbs": 8,
+          "fat": 18,
+          "calories": 346,
+          "carbCategory": ["low", "med"],
+          "notes": "Wok-style chicken with peppers and tomato"
+        }
+      ]
+    },
+    {
+      "name": "Cava",
+      "address": "Route 347, Smithtown, NY",
+      "area": "hauppauge",
+      "cuisine": "Mediterranean Fast Casual",
+      "meals": [
+        {
+          "name": "Greens + Grilled Chicken Bowl",
+          "price": 11.95,
+          "protein": 34,
+          "carbs": 12,
+          "fat": 14,
+          "calories": 310,
+          "carbCategory": ["low"],
+          "notes": "Super greens base, chicken, cucumber, tomato, tahini"
+        },
+        {
+          "name": "Grain Bowl with Chicken",
+          "price": 11.95,
+          "protein": 36,
+          "carbs": 52,
+          "fat": 16,
+          "calories": 500,
+          "carbCategory": ["med"],
+          "notes": "SplitBread rice base adds carbs"
+        },
+        {
+          "name": "Pita Wrap with Chicken + Hummus",
+          "price": 11.95,
+          "protein": 38,
+          "carbs": 58,
+          "fat": 18,
+          "calories": 546,
+          "carbCategory": ["med", "high"],
+          "notes": "Pita wrap adds carbs — good medium/high day option"
+        }
+      ]
+    },
+    {
+      "name": "Halal Food Cart (Hauppauge Industrial)",
+      "address": "Express Dr S, Hauppauge, NY 11788",
+      "area": "hauppauge",
+      "cuisine": "Halal Cart",
+      "meals": [
+        {
+          "name": "Chicken Over Rice",
+          "price": 10.00,
+          "protein": 42,
+          "carbs": 58,
+          "fat": 18,
+          "calories": 562,
+          "carbCategory": ["med", "high"],
+          "notes": "Classic halal cart staple — white sauce on side"
+        },
+        {
+          "name": "Chicken Over Salad",
+          "price": 10.00,
+          "protein": 42,
+          "carbs": 8,
+          "fat": 12,
+          "calories": 312,
+          "carbCategory": ["low"],
+          "notes": "Same protein, no rice — perfect low carb"
+        },
+        {
+          "name": "Lamb Gyro Wrap",
+          "price": 8.00,
+          "protein": 28,
+          "carbs": 35,
+          "fat": 20,
+          "calories": 432,
+          "carbCategory": ["med"],
+          "notes": ""
+        },
+        {
+          "name": "Combo Over Rice (Chicken + Lamb)",
+          "price": 12.00,
+          "protein": 45,
+          "carbs": 60,
+          "fat": 25,
+          "calories": 645,
+          "carbCategory": ["high"],
+          "notes": "Extra protein from the combo"
+        }
+      ]
+    }
+  ]
+}

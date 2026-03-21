@@ -1,0 +1,80 @@
+{
+  "muscleGroups": [
+    {
+      "name": "Legs",
+      "intensity": "heavy",
+      "carbDay": "high",
+      "exercises": [
+        { "name": "Barbell Back Squat", "sets": 4, "reps": "6-8", "notes": "Warm up with 2 light sets" },
+        { "name": "Romanian Deadlift", "sets": 3, "reps": "8-10", "notes": "Focus on hamstring stretch" },
+        { "name": "Leg Press", "sets": 3, "reps": "10-12", "notes": "" },
+        { "name": "Walking Lunges", "sets": 3, "reps": "12 each leg", "notes": "Bodyweight or dumbbells" },
+        { "name": "Leg Curl", "sets": 3, "reps": "10-12", "notes": "" },
+        { "name": "Calf Raises", "sets": 4, "reps": "15-20", "notes": "Slow on the way down" }
+      ]
+    },
+    {
+      "name": "Back",
+      "intensity": "heavy",
+      "carbDay": "high",
+      "exercises": [
+        { "name": "Deadlift", "sets": 4, "reps": "5-6", "notes": "Warm up with 2 light sets" },
+        { "name": "Barbell Row", "sets": 4, "reps": "8-10", "notes": "Keep back flat" },
+        { "name": "Lat Pulldown", "sets": 3, "reps": "10-12", "notes": "Wide grip" },
+        { "name": "Seated Cable Row", "sets": 3, "reps": "10-12", "notes": "Squeeze at the top" },
+        { "name": "Dumbbell Row", "sets": 3, "reps": "10 each arm", "notes": "" },
+        { "name": "Face Pulls", "sets": 3, "reps": "15", "notes": "Light weight, rear delts" }
+      ]
+    },
+    {
+      "name": "Chest",
+      "intensity": "moderate",
+      "carbDay": "med",
+      "exercises": [
+        { "name": "Barbell Bench Press", "sets": 4, "reps": "8-10", "notes": "" },
+        { "name": "Incline Dumbbell Press", "sets": 3, "reps": "10-12", "notes": "30-45 degree incline" },
+        { "name": "Cable Flyes", "sets": 3, "reps": "12-15", "notes": "Squeeze at the center" },
+        { "name": "Dips", "sets": 3, "reps": "8-12", "notes": "Lean forward for chest focus" },
+        { "name": "Push-ups", "sets": 2, "reps": "To failure", "notes": "Finisher" }
+      ]
+    },
+    {
+      "name": "Shoulders",
+      "intensity": "moderate",
+      "carbDay": "med",
+      "exercises": [
+        { "name": "Overhead Press", "sets": 4, "reps": "8-10", "notes": "Standing or seated" },
+        { "name": "Lateral Raises", "sets": 4, "reps": "12-15", "notes": "Light and controlled" },
+        { "name": "Front Raises", "sets": 3, "reps": "12", "notes": "Alternate arms" },
+        { "name": "Reverse Flyes", "sets": 3, "reps": "15", "notes": "Rear delts" },
+        { "name": "Shrugs", "sets": 3, "reps": "12-15", "notes": "Hold at the top" }
+      ]
+    },
+    {
+      "name": "Arms",
+      "intensity": "light",
+      "carbDay": "low",
+      "exercises": [
+        { "name": "Barbell Curl", "sets": 3, "reps": "10-12", "notes": "" },
+        { "name": "Tricep Pushdown", "sets": 3, "reps": "12-15", "notes": "Rope attachment" },
+        { "name": "Hammer Curls", "sets": 3, "reps": "10-12", "notes": "" },
+        { "name": "Overhead Tricep Extension", "sets": 3, "reps": "12", "notes": "Dumbbell or cable" },
+        { "name": "Concentration Curls", "sets": 2, "reps": "12 each arm", "notes": "Squeeze at top" },
+        { "name": "Tricep Dips (Bench)", "sets": 2, "reps": "15", "notes": "Bodyweight" }
+      ]
+    },
+    {
+      "name": "Core",
+      "intensity": "light",
+      "carbDay": "low",
+      "exercises": [
+        { "name": "Hanging Leg Raises", "sets": 3, "reps": "12-15", "notes": "Control the swing" },
+        { "name": "Cable Crunches", "sets": 3, "reps": "15-20", "notes": "" },
+        { "name": "Plank", "sets": 3, "reps": "45-60 sec", "notes": "Keep hips level" },
+        { "name": "Russian Twists", "sets": 3, "reps": "20 total", "notes": "With plate or medicine ball" },
+        { "name": "Ab Wheel Rollout", "sets": 3, "reps": "10-12", "notes": "From knees if needed" },
+        { "name": "Dead Bug", "sets": 3, "reps": "10 each side", "notes": "Slow and controlled" }
+      ]
+    }
+  ]
+}
