@@ -77,7 +77,7 @@ const Calendar = {
 
     container.innerHTML = `
       <div class="page-header">
-        <h1>Carb Cycle</h1>
+        <h1>Calendar</h1>
         <div class="subtitle">Today is a <strong>${CarbCycle.getLabel(todayType)}</strong> day</div>
       </div>
 

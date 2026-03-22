@@ -2,7 +2,7 @@
 // SERVICE WORKER — Offline caching
 // ============================================
 
-const CACHE_NAME = 'carb-cycle-v2';
+const CACHE_NAME = 'carb-cycle-v3';
 const ASSETS = [
   '/',
   '/index.html',
