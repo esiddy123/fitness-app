@@ -86,6 +86,18 @@ const Calendar = {
         <div class="day-macros">${todayMacros.protein}g protein · ${todayMacros.carbs}g carbs · ${todayMacros.fat}g fat · ${todayMacros.calories} cal</div>
       </div>
 
+      <div style="display: flex; justify-content: center; gap: 20px; font-size: 13px; margin-bottom: 16px;">
+        <div style="display:flex;align-items:center;gap:6px;">
+          <div style="width:14px;height:14px;border-radius:4px;background:var(--low-carb);border:1px solid var(--border);"></div> Low
+        </div>
+        <div style="display:flex;align-items:center;gap:6px;">
+          <div style="width:14px;height:14px;border-radius:4px;background:var(--med-carb);"></div> Medium
+        </div>
+        <div style="display:flex;align-items:center;gap:6px;">
+          <div style="width:14px;height:14px;border-radius:4px;background:var(--high-carb);"></div> High
+        </div>
+      </div>
+
       <div class="card">
         <div class="calendar-nav">
           <button id="cal-prev">&larr;</button>
@@ -98,21 +110,6 @@ const Calendar = {
       </div>
 
       ${detailHtml}
-
-      <div class="card" style="margin-top: 12px;">
-        <div class="card-title mb-8">Legend</div>
-        <div style="display: flex; gap: 16px; font-size: 13px;">
-          <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:12px;height:12px;border-radius:3px;background:var(--low-carb);"></div> Low Carb
-          </div>
-          <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:12px;height:12px;border-radius:3px;background:var(--med-carb);"></div> Medium
-          </div>
-          <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:12px;height:12px;border-radius:3px;background:var(--high-carb);"></div> High Carb
-          </div>
-        </div>
-      </div>
     `;
 
     // Navigation

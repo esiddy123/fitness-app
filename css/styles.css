@@ -4,12 +4,12 @@
 
 :root {
   /* Carb day colors — green gradient */
-  --low-carb: #86efac;
-  --low-carb-bg: #f0fdf4;
-  --med-carb: #22c55e;
-  --med-carb-bg: #dcfce7;
-  --high-carb: #166534;
-  --high-carb-bg: #bbf7d0;
+  --low-carb: #DAF2D0;
+  --low-carb-bg: #EDF8E8;
+  --med-carb: #8ED973;
+  --med-carb-bg: #C8EDBA;
+  --high-carb: #275317;
+  --high-carb-bg: #8ED973;
 
   /* UI colors */
   --bg: #0f172a;
@@ -224,9 +224,9 @@ html, body {
   cursor: default;
 }
 
-.calendar-day.low { background: var(--low-carb-bg); color: #166534; }
-.calendar-day.med { background: var(--med-carb-bg); color: #166534; }
-.calendar-day.high { background: var(--high-carb-bg); color: #14532d; }
+.calendar-day.low { background: var(--low-carb); color: #1e293b; }
+.calendar-day.med { background: var(--med-carb); color: #1e293b; }
+.calendar-day.high { background: var(--high-carb); color: white; }
 
 .calendar-day.today {
   outline: 2px solid var(--accent);
